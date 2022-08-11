@@ -1,16 +1,17 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-    display: flex;
-    background-color: rgb(50, 167, 145);
-    flex-direction: row;
-    justify-content: space-between;
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#formulario {
-    display: flex;
-    align-items: center;
+.trybewarts-login {
+  display: flex;
+  align-items: center;
 }
