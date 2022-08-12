@@ -14,3 +14,13 @@ function formButton() {
   });
 }
 formButton();
+
+function sendingForm() {
+const submitBtn = document.querySelector("#submit-btn");
+const agreementChecked = document.querySelector("#agreement");
+submitBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  if (agreementChecked)
+});
+
+}
