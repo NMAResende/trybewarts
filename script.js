@@ -15,12 +15,20 @@ function formButton() {
 }
 formButton();
 
-function sendingForm() {
-const submitBtn = document.querySelector("#submit-btn");
-const agreementChecked = document.querySelector("#agreement");
-submitBtn.addEventListener('click', (event) => {
+const btnSubmit = document.querySelector('#submit-btn');
+const checkBox = document.querySelector('#agreement');
+
+btnSubmit.addEventListener('click', (event) => {
   event.preventDefault();
-  if (agreementChecked)
 });
 
+function submit() {
+  checkBox.addEventListener('change', () => {
+    if (checkBox.checked) {
+      btnSubmit.disabled = false;
+    } else {
+      btnSubmit.disabled = true;
+    }
+  });
 }
+submit();
