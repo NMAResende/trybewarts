@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,11 +26,12 @@
     </header>
     <main>
         <form id="evaluation-form">
-            <div>
+            <h2>Formulário de Avaliação</h2>
+            <div id="informacoes">
                 <input type="text" id="input-name" placeholder="Nome">
                 <input type="text" id="input-lastname" placeholder="Sobrenome">
             </div>
-            <div>
+            <div id="options">
                 <input type="email" id="input-email" placeholder="Email">
                 <select id="house">
                     <option value="Gitnória" id="gitnoria-house">Gitnória</option>
@@ -36,38 +40,38 @@
                     <option value="Pytherina" id="pytherina-house">Pytherina</option>
                 </select>
             </div>
+            <div id="tudo">
+                <div id="familia">
+                    <label id="label-family">Qual sua família?</label>
 
-            <label id="label-family">Qual sua família?</label>
+                    <label for="frontend">
+                        <input type="radio" name="family" value="Frontend" id="frontend"> Família Frontend
+                    </label>
 
-            <label for="frontend">
-                <input type="radio" name="family" value="Frontend" id="frontend"> Família Frontend
-            </label>
+                    <label for="backend">
+                        <input type="radio" name="family" value="Backend" id="backend"> Família Backend
+                    </label>
 
-            <label for="backend">
-                <input type="radio" name="family" value="Backend" id="backend"> Família Backend
-            </label>
-
-            <label for="fullstack">
-                <input type="radio" name="family" value="FullStack" id="fullstack"> Família Fullstack
-            </label>
+                    <label for="fullstack">
+                        <input type="radio" name="family" value="FullStack" id="fullstack"> Família Fullstack
+                    </label>
+                </div>
+                <div id="conteudo">
+                    <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                    <label for="Hofs">Hofs
+                        <input type="checkbox" value="HoFs" name="item" id="Hofs" class="subject">
+                        <label for="Jest">Jest</label>
+                        <input type="checkbox" value="Jest" name="item" id="Jest" class="subject">
+                        <label for="">Promises</label>
+                        <input type="checkbox" value="Promises" name="item" id="Promises" class="subject">
+                        <label for="React">React</label>
+                        <input type="checkbox" value="React" name="item" id="React" class="subject">
+                        <label for="SQL">SQL</label>
+                        <input type="checkbox" value="SQL" name="item" id="SQL" class="subject">
+                        <label for="Python">Python</label>
+                        <input type="checkbox" value="Python" name="item" id="Python" class="subject">
+                </div>
             </div>
-            <div>
-                <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label><br>
-
-                <label for="Hofs">Hofs
-                    <input type="checkbox" value="HoFs" name="item" id="Hofs" class="subject">
-                    <label for="Jest">Jest</label>
-                    <input type="checkbox" value="Jest" name="item" id="Jest" class="subject">
-                    <label for="">Promises</label>
-                    <input type="checkbox" value="Promises" name="item" id="Promises" class="subject">
-                    <label for="React">React</label>
-                    <input type="checkbox" value="React" name="item" id="React" class="subject">
-                    <label for="SQL">SQL</label>
-                    <input type="checkbox" value="SQL" name="item" id="SQL" class="subject">
-                    <label for="Python">Python</label>
-                    <input type="checkbox" value="Python" name="item" id="Python" class="subject">
-            </div>
-
             <div>
                 <label for="avaliation" id="label-rate">Como você avalia a Trybewarts?</label><br>
                 <label for="1">
@@ -104,7 +108,8 @@
 
             <div>
                 <label for="textarea" class="textarea">Deixe seu comentário:</label><br>
-                <textarea id="textarea" name="textarea" maxlength="500"></textarea>
+                <span id="counter">500</span> 
+                <textarea id="textarea" name="textarea" maxlength="500" class="caracteres"></textarea>
             </div>
 
             <div>

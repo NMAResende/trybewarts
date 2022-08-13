@@ -9,6 +9,23 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: auto;
+  padding: 10px;
+}
+
+h1 {
+  color: white;
+  font-family: "Potta One", cursive;
+  font-weight: 100;
+}
+
+h2 {
+  text-align: center;
+}
+
+.trybewarts-header-logo {
+  width: 3.5em;
+  margin-left: 5px;
 }
 
 .trybewarts-login {
@@ -16,14 +33,96 @@
   align-items: center;
 }
 
+#email,
+#password {
+  border: none;
+  width: 140px;
+  height: 30px;
+  border-radius: 8px;
+  margin: 5px;
+  text-align: left;
+  padding: 5px;
+}
+
+.trybewarts-login button {
+  border: none;
+  width: 110px;
+  height: 32px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
 main {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 80px;
+}
+
+#input-name,
+#input-lastname,
+#input-email {
+  display: flex;
+  height: 55%;
+  flex-grow: 1;
+  border: 1px rgba(0, 0, 0, 0.367) solid;
+  border-radius: 7px;
+  padding: 5px;
+  margin: 0 auto;
+  align-content: center;
+}
+
+#informacoes,
+#options {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  width: 400px;
+}
+
+#options select {
+  border: 1px rgba(0, 0, 0, 0.367) solid;
+  height: 60%;
+  flex-grow: 1;
+  border-radius: 7px;
+}
+
+#tudo {
+  display: flex;
+  width: 380px;
+  justify-content: space-between;
+}
+
+#familia {
+  display: flex;
+  flex-direction: column;
+}
+
+#conteudo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 200px;
+}
+
+#conteudo label {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+#label-content {
+  display: flex;
+  width: 200px;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  align-items: center;
 }
 
 #trybewarts-forms-logo {

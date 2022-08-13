@@ -32,3 +32,13 @@ function submit() {
   });
 }
 submit();
+
+function count(event) {
+  const counter = document.querySelector('#counter');
+  counter.innerHTML = 500;
+  counter.innerHTML -= event.target.value.length;
+}
+
+const textArea = document.querySelector('#textarea');
+
+textArea.addEventListener('keyup', count);
