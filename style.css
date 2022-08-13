@@ -15,7 +15,7 @@
 
 h1 {
   color: white;
-  font-family: "Potta One", cursive;
+  font-family: Potta One, cursive;
   font-weight: 100;
 }
 
@@ -33,8 +33,7 @@ h2 {
   align-items: center;
 }
 
-#email,
-#password {
+#email , #password {
   border: none;
   width: 140px;
   height: 30px;
@@ -59,9 +58,7 @@ main {
   padding: 80px;
 }
 
-#input-name,
-#input-lastname,
-#input-email {
+#input-name , #input-lastname , #input-email {
   display: flex;
   height: 55%;
   flex-grow: 1;
@@ -72,8 +69,7 @@ main {
   align-content: center;
 }
 
-#informacoes,
-#options {
+#informacoes , #options {
   display: flex;
   height: 50px;
   align-items: center;
