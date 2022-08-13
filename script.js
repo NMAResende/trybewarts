@@ -1,7 +1,16 @@
+const btnEnviar = document.querySelector('#enviar');
+const name = document.querySelector('#input-name');
+const lastName = document.querySelector('#input-lastname');
+const emailForm = document.querySelector('#input-email');
+const house = document.querySelector('#house');
+const inputEmail = document.querySelector('#email');
+const inputPassword = document.querySelector('#password');
+const counter = document.querySelector('#counter');
+const textArea = document.querySelector('#textarea');
+const btnSubmit = document.querySelector('#submit-btn');
+const checkBox = document.querySelector('#agreement');
+
 function formButton() {
-  const btnEnviar = document.querySelector('#enviar');
-  const inputEmail = document.querySelector('#email');
-  const inputPassword = document.querySelector('#password');
   const email = 'tryber@teste.com';
   const senha = '123456';
   btnEnviar.addEventListener('click', (event) => {
@@ -14,9 +23,6 @@ function formButton() {
   });
 }
 formButton();
-
-const btnSubmit = document.querySelector('#submit-btn');
-const checkBox = document.querySelector('#agreement');
 
 btnSubmit.addEventListener('click', (event) => {
   event.preventDefault();
@@ -34,11 +40,12 @@ function submit() {
 submit();
 
 function count(event) {
-  const counter = document.querySelector('#counter');
   counter.innerHTML = 500;
   counter.innerHTML -= event.target.value.length;
 }
 
-const textArea = document.querySelector('#textarea');
-
 textArea.addEventListener('keyup', count);
+
+function informations() {
+  let userName = localStorage.getItem('#input-name');
+}
