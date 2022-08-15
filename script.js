@@ -1,7 +1,4 @@
 const btnEnviar = document.querySelector('#enviar');
-const name = document.querySelector('#input-name');
-const lastName = document.querySelector('#input-lastname');
-const emailForm = document.querySelector('#input-email');
 const house = document.querySelector('#house');
 const inputEmail = document.querySelector('#email');
 const inputPassword = document.querySelector('#password');
