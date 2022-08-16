@@ -68,7 +68,7 @@ function selectingMaterias() {
       result += `${materia[i].value}, `;
     }
   }
-  return result;
+  return result.substring(0, result.length - 2);
 }
 
 function evaluation() {
